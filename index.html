@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survery Form</title>
+</head>
+<body>
+    <h1>Is a burger the best food</h1>
+    <form action="https://httpbin.org/post" method="POST">
+    <form>
+        <label for="name">Your Name:</label>
+        <input type="text" id="name"required>
+        <span id="nameError" class="error"></span>
+      
+        <br><br>
+        <label for="yes">Would you add pickles to your burger?</label> 
+        <input type="radio" id="Yes" name="response" value="Yes">
+        <label for="Yes">Yes</label>
+        <span id="nameError" class="error"></span>
+
+        
+        <input type="radio" id="No" name="response" value="No">
+        <label for="No">No</label>
+        <span id="responseError" class="error"></span>
+        
+        <br><br>
+        <label for="checkbox"> what condiments would you add to your burger?</label>
+        <input type="checkbox" id="Ketchup" name="Ketchup" value="Ketchup">
+        <label for="Ketchup"> Ketchup</label>
+        <input type="checkbox" id="Mustard" name="Mustard" value="Mustard">
+        <label for="Mustard">Mustard</label>
+        <input type="checkbox" id="Pickles" name="Pickles" value="Pickles">
+        <label for="Pickles">Pickles</label>
+        <input type="checkbox" id="Onions" name="Onions" value="Onions">
+        <label for="Onions">Onions</label>
+        <span id="condimentsError" class="error"></span>
+
+        <br><br>
+        <label for="BreadType">What type of bun do you like for your burger?</label>
+        <select name="BreadType" id="BreadType" required>
+             <option value="Breads" selected="Bread">White </option>  
+        </select>
+        <span id="breadTypeError" class="error"></span>
+        
+        <br><br>
+        <label for="email">Enter your Email: </label>
+        <input type="email" id="email" required> 
+        <span id="emailError" class="error"></span>
+        
+        <br><br>
+        <label for="Birthdate">date of birth: </label>
+        <input type="date" id="Birthdate" name="Birthdate" required>
+        <span id="birthdateError" class="error"></span>
+
+        <br> <br>
+        <label for="PhoneNumber">Phone Number:</label>
+        <input type="tel" id="PhoneNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+        <span id="phoneError" class="error"></span>
+        <br><br>
+
+        <button type="submit">Submit Form</button>
+    </form>
+   
+</body>
+</html>
